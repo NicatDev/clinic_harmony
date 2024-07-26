@@ -649,7 +649,9 @@
 											<div class="pbmit-bg-image" {% if blog.image %} style="background-image:url({{ blog.image.url }})" {% endif %}>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
+														{% if blog.image %}
 														<img src="{{ blog.image.url }}" class="img-fluid" alt="">
+														{% endif %}
 													</div>
 												</div>
 											</div>
