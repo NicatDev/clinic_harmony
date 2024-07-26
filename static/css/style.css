@@ -2643,3 +2643,24 @@ textarea.form-control{
 
     }
 }
+
+
+.service_section_title{
+    font-size:30px;
+}
+@media (max-width: 780px) {
+    .service_title{
+        font-size:22px;
+    }
+    .service_section_title{
+        font-size:26px;
+    }
+}
+@media (max-width: 340px) {
+    .service_title{
+        font-size:18px;
+    }
+    .service_section_title{
+        font-size:22px;
+    }
+}
