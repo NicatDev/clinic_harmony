@@ -76,7 +76,7 @@
 										
 											<div class="pbmit-entry-content">
 												
-												<h1 class="mb-3 pbmit-title">{{ blog.title }}</h1>
+												<h1 class="mb-3 service_title">{{ blog.title }}</h1>
 												<div class="pbmit-blog-meta pbmit-blog-meta-top">	
 													<span class="pbmit-meta pbmit-meta-date">
 														<i class="pbmit-base-icon-calendar-3"></i>
@@ -98,7 +98,7 @@
 												<p>{{ blog.content }}</p>
 
 												{% for section in blog.blogSections.all %}
-													<h3 class="mb-3 pbmit-title">{{ section.title }}</h3>
+													<h3 class="mb-3 service_section_title">{{ section.title }}</h3>
 													<p>{{ section.content }}</p>
 													{% if section.image %}
 													<div class="pbmit-block-columns row">
