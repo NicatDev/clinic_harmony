@@ -101,7 +101,8 @@
 													<h3 class="mb-3 pbmit-title">{{ section.title }}</h3>
 													<p>{{ section.content }}</p>
 													<div class="pbmit-block-columns row">
-														{% if section.image.url %}
+													
+														{% if section.image %}
 														<div class="pbmit-block-column col-md-12 col-xl-{% if section.image2 %}6{% else %}12{% endif %}">
 															<figure>
 																<img src="{{ section.image.url }}" class="img-fluid w-100" alt="">
