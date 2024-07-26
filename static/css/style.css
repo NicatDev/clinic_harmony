@@ -2650,7 +2650,7 @@ textarea.form-control{
 }
 @media (max-width: 780px) {
     .service_title{
-        font-size:30px;
+        font-size:32px;
     }
     .service_section_title{
         font-size:26px;
@@ -2658,9 +2658,9 @@ textarea.form-control{
 }
 @media (max-width: 380px) {
     .service_title{
-        font-size:24px;
+        font-size:26px;
     }
     .service_section_title{
-        font-size:18px;
+        font-size:20px;
     }
 }
