@@ -70,7 +70,9 @@
 									<p>{{ service.content }}</p>
 								</div>
 								<div class="pbmit-service-feature-image">
+									{% if service.image %}
 									<img  src="{{ service.image.url }}" class="img-fluid w-100" alt="">
+									{% endif %}
 								</div>
 								{% for service in service.serviceSections.all %}
 								<div class="pbmit-service_content">

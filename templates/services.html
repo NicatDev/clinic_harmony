@@ -65,7 +65,9 @@
 								<div class="pbmit-featured-container">
 									<div class="pbmit-featured-img-wrapper">
 										<div class="pbmit-featured-wrapper">
+											{% if service.image %}
 											<img src="{{ service.image.url }}" class="img-fluid" alt="{{service.title}}">
+											{% endif %}
 										</div>
 									</div>
 									<a class="pbmit-blog-btn" href="{% url 'service' service.slug %}">
