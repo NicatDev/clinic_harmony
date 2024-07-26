@@ -2650,13 +2650,13 @@ textarea.form-control{
 }
 @media (max-width: 780px) {
     .service_title{
-        font-size:22px;
-    }
-    .service_section_title{
         font-size:26px;
     }
+    .service_section_title{
+        font-size:30px;
+    }
 }
-@media (max-width: 340px) {
+@media (max-width: 380px) {
     .service_title{
         font-size:18px;
     }
