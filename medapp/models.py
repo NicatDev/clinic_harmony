@@ -81,7 +81,8 @@ class Service(BaseMixin):
     title = models.CharField(max_length=300)
     image = models.ImageField(null=True,blank=True)
     content = models.TextField()
-
+    image_at_detail = models.BooleanField(default=False)
+    
     def __str__(self):
         return self.title
 
