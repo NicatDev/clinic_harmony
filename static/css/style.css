@@ -2651,16 +2651,20 @@ textarea.form-control{
 @media (max-width: 780px) {
     .service_title{
         font-size:32px;
+        line-height: 38px;
     }
     .service_section_title{
         font-size:26px;
+        line-height: 32px;
     }
 }
 @media (max-width: 380px) {
     .service_title{
         font-size:26px;
+        line-height: 32px;
     }
     .service_section_title{
         font-size:20px;
+        line-height: 26px;
     }
 }
