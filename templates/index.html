@@ -646,7 +646,7 @@
 								<article class="pbmit-blog-style-2">
 									<div class="post-item d-flex">
 										<div class="pbmit-featured-container">
-											<div class="pbmit-bg-image" style="background-image:url({{ blog.image.url }})">
+											<div class="pbmit-bg-image" {% if blog.image %} style="background-image:url({{ blog.image.url }})" {% endif %}>
 												<div class="pbmit-featured-img-wrapper">
 													<div class="pbmit-featured-wrapper">
 														<img src="{{ blog.image.url }}" class="img-fluid" alt="">

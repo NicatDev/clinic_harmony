@@ -71,7 +71,9 @@
 								<div class="pbmit-featured-img-wrapper">
 									<div class="pbmit-featured-wrapper">
 										<a href="{% url 'blog' blog.slug %}">
+											{% if blog.image %}
 											<img src="{{ blog.image.url }}" class="img-fluid" alt="{{ blog.title }}">
+											{% endif %}
 										</a>
 									</div>
 									<span class="pbmit-meta pbmit-meta-cat">
