@@ -2644,7 +2644,9 @@ textarea.form-control{
     }
 }
 
-
+.service_title{
+    font-size:36px;
+}
 .service_section_title{
     font-size:30px;
 }
