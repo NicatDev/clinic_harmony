@@ -73,23 +73,23 @@
                                     </svg>
                                 </span>
 								<ul class="navigation clearfix">
-                                    <li class="dropdown {% if request.resolver_match.url_name == 'home' %} active {% endif %}">
+                                    <li class=" {% if request.resolver_match.url_name == 'home' %} active {% endif %}">
                                         <a href="{% url 'home' %}">Ana səhifə</a>
                                         
                                     </li>
-                                    <li class="dropdown {% if request.resolver_match.url_name == 'about' %} active {% endif %}">
+                                    <li class=" {% if request.resolver_match.url_name == 'about' %} active {% endif %}">
                                         <a href="{% url 'about' %}">Haqqımızda</a>
                                        
                                     </li>
-                                    <li class="dropdown {% if request.resolver_match.url_name == 'services' %} active {% endif %}">
+                                    <li class=" {% if request.resolver_match.url_name == 'services' %} active {% endif %}">
                                         <a href="{% url 'services' %}">Xidmətlər</a>
                                       
                                     </li>
-                                    <li class="dropdown">
+                                    <li class="">
                                         <a href="{% url 'team' %}">Həkimlər</a>
                                        
                                     </li>
-                                    <li class="dropdown {% if request.resolver_match.url_name == 'blogs' %} active {% endif %}">
+                                    <li class=" {% if request.resolver_match.url_name == 'blogs' %} active {% endif %}">
                                         <a href="{% url 'blogs' %}">Bloqlar</a>
                                       
                                     </li>
