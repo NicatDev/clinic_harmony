@@ -2673,3 +2673,13 @@ textarea.form-control{
 .pbmit-button-text{
     font-family: 'Roboto';
 }
+@media (max-width: 600px) {
+.about-one_img{
+    padding:180px 0px 180px 0px;
+}   
+}
+@media (max-width: 400px) {
+    .about-one_img{
+        padding:140px 0px 140px 0px;
+    }   
+    }
