@@ -160,7 +160,7 @@
                                         <h5 class="pbmit-sub-title transform-top transform-delay-1">{{ slide.miniTitle }}</h5>
                                         <h2 class="pbmit-title transform-bottom transform-delay-2">{{ slide.title|safe }} </h2>
                                         <div class="pbmit-button transform-bottom transform-delay-3">
-                                            <a class="pbmit-btn pbmit-btn-outline" href="about-us.html">
+                                            <a class="pbmit-btn pbmit-btn-outline" href="{% url 'about' %}">
                                                 <span class="pbmit-button-content-wrapper">
                                                     <span class="pbmit-button-icon pbmit-align-icon-right">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="22.76" height="22.76" viewBox="0 0 22.76 22.76">
@@ -221,7 +221,7 @@
 								</div>
 								<ul class="pbmit-timelist-list">
 									<li>
-										<span class="pbmit-timelist-li-title">Həftən içi</span>
+										<span class="pbmit-timelist-li-title">Həftə içi</span>
 										<span class="pbmit-timelist-li-value">09:00 - 18:00</span>
 									</li>
 									<li>
@@ -311,7 +311,7 @@
 											<div class="pbmit-fld-wrap">
 												<h4 class="pbmit-fid-inner">
 													<span class="pbmit-fid-before"></span>
-													<span class="pbmit-number-rotate numinate completed" data-appear-animation="animateDigits" data-from="0" data-to="235" data-interval="5" data-before="" data-before-style="" data-after="" data-after-style="">235</span>
+													<span class="pbmit-number-rotate numinate completed" >500</span>
 													<span class="pbmit-fid"><sup>+</sup></span>
 												</h4>
 												<div class="pbmit-fid-sub">
@@ -390,7 +390,7 @@
 									</div>
 								</div>
 								<div class="about-one_btn">
-									<a class="pbmit-btn" href="about-us.html">
+									<a class="pbmit-btn" href="{% url 'about' %}">
 										<span class="pbmit-button-content-wrapper">
 											<span class="pbmit-button-icon pbmit-align-icon-right">
 												<svg xmlns="http://www.w3.org/2000/svg" width="22.76" height="22.76" viewBox="0 0 22.76 22.76">
@@ -489,7 +489,7 @@
 															{% endif %}
 														</div>
 													</div>
-													<a class="pbmit-service-btn" href="service-details.html" title="{{ service.title }}">
+													<a class="pbmit-service-btn" href="{% url 'service' service.slug %}" title="{{ service.title }}">
 														<span class="pbmit-button-icon-wrapper">
 															<span class="pbmit-button-icon">
 																<i class="pbmit-base-icon-black-arrow-1"></i>
@@ -502,14 +502,14 @@
 														<i class="pbmit-xcare-icon pbmit-xcare-icon-gesundheit-1"></i>			
 													</div>
 													<div class="pbmit-serv-cat">
-														<a href="service-details.html" rel="tag">{{ service.title }}</a>
+														<a href="{% url 'service' service.slug %}" rel="tag">{{ service.title }}</a>
 													</div>
 													<h3 class="pbmit-service-title">
-														<a href="service-details.html">{{ service.title }}</a>
+														<a href="{% url 'service' service.slug %}">{{ service.title }}</a>
 													</h3>
 												</div>
 											</div>
-											<a class="pbmit-link" href="service-details.html"></a>
+											<a class="pbmit-link" href="{% url 'service' service.slug %}"></a>
 										</div>
 									</article>
 								</div>
@@ -543,10 +543,10 @@
 										<div class="pbminfotech-box-content">
 											<div class="pbminfotech-titlebox">
 												<div class="pbmit-port-cat">
-													<a href="portfolio-grid-col-3.html" rel="tag">{{ doctor.speciality }}</a>
+													<a href="{% url 'doctor' doctor.slug %}" rel="tag">{{ doctor.speciality }}</a>
 												</div>
 												<h3 class="pbmit-portfolio-title">
-													<a href="single-detail-style-01.html">{{ doctor.full_name }}</a>
+													<a href="{% url 'doctor' doctor.slug %}">{{ doctor.full_name }}</a>
 												</h3>
 											</div>
 										</div>
@@ -575,7 +575,7 @@
 									   </h4>
 									   <h2 class="pbmit-element-title">Sağlamlığınızı bizə <br> əmanət edin!</h2>
 										<div class="pbmit-ihbox-btn">
-											<a href="our-history.html">
+											<a href="{% url 'contact' %}">
 												<span class="pbmit-button-text">Müraciət et!</span>
 												<span class="pbmit-button-icon-wrapper">
 													<span class="pbmit-button-icon">
@@ -667,13 +667,13 @@
 													</div>
 												</div>
 												<h3 class="pbmit-post-title">
-													<a href="blog-details.html">{{ blog.title }}</a>
+													<a href="{% url 'blog' blog.slug %}">{{ blog.title }}</a>
 												</h3>
 												<div class="pbminfotech-box-desc">
 											{{ blog.content|slice:160 }}...
 												</div>
 											</div>
-											<a class="pbmit-blog-btn" href="blog-details.html">
+											<a class="pbmit-blog-btn" href="{% url 'blog' blog.slug %}">
 												<span class="pbmit-button-icon-wrapper">
 													<span class="pbmit-button-icon">
 														<i class="pbmit-base-icon-black-arrow-1"></i>
